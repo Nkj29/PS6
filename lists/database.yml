@@ -1,0 +1,26 @@
+Databases:
+  MyDataset: 
+    - /home/user2/Desktop/Nishant/PS6/audio_augment_batch1/{uri}.wav
+
+
+Protocols:
+  MyDataset:
+    SpeakerDiarization:
+      MyProtocol:
+        train:
+          uri: /home/user2/Desktop/Nishant/PS6/lists/train.lst
+          # audio: /home/user2/Desktop/Nishant/PS6/audio_augment_batch1/{uri}.wav
+          annotation: /home/user2/Desktop/Nishant/PS6/rttm/{uri}.rttm
+          annotated: /home/user2/Desktop/Nishant/PS6/uem/train.uem
+
+        development:
+          uri: /home/user2/Desktop/Nishant/PS6/lists/dev.lst
+          # audio: /home/user2/Desktop/Nishant/PS6/audio_augment_batch1/{uri}.wav
+          annotation: /home/user2/Desktop/Nishant/PS6/rttm/{uri}.rttm
+          annotated: /home/user2/Desktop/Nishant/PS6/uem/dev.uem
+
+        test:
+          uri: /home/user2/Desktop/Nishant/PS6/lists/test.lst
+          # audio: /home/user2/Desktop/Nishant/PS6/audio_augment_batch1/{uri}.wav
+          annotation: /home/user2/Desktop/Nishant/PS6/hyp_rttm/{uri}.rttm
+          annotated: /home/user2/Desktop/Nishant/PS6/uem/test.uem
